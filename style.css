@@ -680,7 +680,7 @@ p.page_2_text {
         pointer-events: none;
     }
     #page_3 {
-        left: 0;
+        left: 40px;
     }
     .navigation {
         display: none;
