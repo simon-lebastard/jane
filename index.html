@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jane</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script type="text/javascript" src="script.js"></script>
+        <link rel="icon" href="images/favicon.png" />
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+          </style>
+    </head>
+    <body id="body">
+        <header onMouseLeave="closeMenu()">
+            <h1 alt="Jane" onClick="navigatePage(1)"></h1>
+            <div id="menu" onClick="openMenu()">
+                <div class="menu_icon" id="men_1"></div>
+                <div class="menu_icon" id="men_2"></div>
+                <div class="menu_icon" id="men_3"></div>
+                <div class="menu_icon" id="men_4"></div>
+            </div>
+            <div id="menu_list">
+                <a class="menu_item button active" id="menu_item_1" onClick="navigatePage(1)">Hello</a>
+                <a class="menu_item button" id="menu_item_2" onClick="navigatePage(2)">Who's Jane</a>
+                <a class="menu_item button" id="menu_item_3" onClick="navigatePage(3)">Get in touch</a>
+            </div>
+        </header>
+        <section id="content">
+            <section class="pages state1" id="page_1">
+                <div class="fullscreen_img" id="img_1"></div>
+                <div class="fullscreen_img" id="img_2"></div>
+                <div class="bottom_content" id="bott_cont_1">
+                    <h2>Create the best flowcharts<br>in minutes. With <span>Jane</span>.</h2>
+                    <button class="button white_button" id="button_1" onClick="navigatePage(2)">Wait, who's Jane?</button>
+                </div>
+                <div class="navigation nav_page_1 right" onClick="navigatePage(1)"></div>
+            </section>
+            <section class="pages state1" id="page_2">
+                <div id="img_page_2"></div>
+                <div id="page_2_content">
+                    <h2 class="page_2_text">How can Jane help you?</h2>
+                    <h3 class="page_2_text" id="h3_1">Flowcharts made easy.</h3>
+                    <p class="page_2_text">Create complex flowcharts <b>in minutes</b> with Jane's intuitive flowchart tool, directly <b>within Powerpoint</b>.</p>
+                    <h3 class="page_2_text" id="h3_2">Neat design.</h3>
+                    <p class="page_2_text">Create <b>readable</b>, easy-on-the-eye and <b>brand-compliant</b> flowcharts without even knowing it.</p>
+                    <h3 class="page_2_text" id="h3_3">Size doesn't matter.</h3>
+                    <p class="page_2_text">Jane <b>automatically segments</b> your flowcharts to provide the best result for your presentations.</p>
+                    <button class="button black_button" id="button_2" onClick="navigatePage(3)">Get in touch</button>
+                </div>
+                <div class="navigation nav_page_2 left" onClick="navigatePage(2)">
+                    <div class="arrow" id="arrow_left">
+                        <div class="arrow_icon left"></div>
+                        <div class="arrow_icon right"></div>
+                    </div>
+                </div>
+                <div class="navigation nav_page_2 right" onClick="navigatePage(2)">
+                    <div class="arrow" id="arrow_right">
+                        <div class="arrow_icon left"></div>
+                        <div class="arrow_icon right"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="pages state1" id="page_3">
+                <div id="page_3_content">
+                    <div id="contact_icon"></div>
+                    <p class="page_3_text">Wanna be a part of Jane's story?</p>
+                    <button class="button white_button">Send some thoughts</button>
+                </div>
+                <div class="navigation nav_page_3 left" id="button_3" onClick="navigatePage(3)"></div>
+            </section>
+        </section>
+    </body>
+    <section id="loader"><div id="loader_logo"></div></section>
+</html>
