@@ -16,6 +16,12 @@ function closeMenu(){
 
 
 /*---------------- FOLLOW CURSOR FUNCTION ----------------*/
+
+/*
+FOR LATER: calculate the transform ratio with the screen's height & width to avoid buggy effect on large screens
+window.screen.height;
+window.screen.width;
+*/
 var y,x;
 document.addEventListener("mousemove", function(e){
             y = e.pageY;
