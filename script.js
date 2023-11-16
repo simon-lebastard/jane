@@ -16,19 +16,16 @@ function closeMenu(){
 
 
 /*---------------- FOLLOW CURSOR FUNCTION ----------------*/
-
-/*
-FOR LATER: calculate the transform ratio with the screen's height & width to avoid buggy effect on large screens
-window.screen.height;
-window.screen.width;
-*/
-var y,x;
+var y,x,windowY,windowX;
 document.addEventListener("mousemove", function(e){
             y = e.pageY;
             x = e.pageX;
-  document.getElementById("img_1").style.transform = 'rotateX(1'+(y/200)+'deg) rotateY(-2'+(x/200)+'deg) rotateZ(10deg) translateX('+0+(x/40)+'px) translateY('+0+(y/40)+'px)';
-  document.getElementById("img_2").style.transform = 'rotateX(1'+(y/160)+'deg) rotateY(-2'+(x/160)+'deg) rotateZ(10deg) translateX('+0+(x/36)+'px) translateY('+0+(y/36)+'px)';
-
+            windowY = window.screen.height;
+            windowX = window.screen.width;
+  document.getElementById("img_1").style.transform = 'rotateX('+(10-y/(windowY/5))+'deg) rotateY('+(-20+x/(windowX/5))+'deg) rotateZ(4deg) translateX('+0+(x/(windowX/30))+'px) translateY('+0+(y/(windowY/30))+'px)';
+  document.getElementById("img_2").style.transform = 'rotateX('+(10-y/(windowY/5))+'deg) rotateY('+(-20+x/(windowX/5))+'deg) rotateZ(4deg) translateX('+0+(x/(windowX/40))+'px) translateY('+0+(y/(windowY/40))+'px)';
+  //document.getElementById("img_1").style.transform = 'translateX('+0+(x/(windowX/10))+'px) translateY('+0+(y/(windowY/10))+'px)';
+  //document.getElementById("img_2").style.transform = 'translateX('+0+(x/(windowX/20))+'px) translateY('+0+(y/(windowY/20))+'px)';
 });
 
 
