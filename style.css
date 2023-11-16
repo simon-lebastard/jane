@@ -496,10 +496,10 @@ button {
     transform: rotateX(10deg) rotateY(-20deg) rotateZ(4deg);
 }
 #img_1 {
-    background-image:url(images/test-3D-1.png);
+    background-image: url(images/main_illustration-1.png);
 }
 #img_2 {
-    background-image:url(images/test-3D-2.png);
+    background-image: url(images/main_illustration-2.png);
 }
 .bottom_content {
     position: absolute;
@@ -517,8 +517,12 @@ button {
     margin: 200px 80px;
     float: left;
     border-radius: 12px;
-    box-shadow: inset 0 2px 16px #00000050;
-    background: linear-gradient(0deg, #00000000, #0000000A);
+    /*box-shadow: inset 0 2px 16px #00000050;*/
+    box-shadow: 0 8px 24px #00000050;
+    background-image: url(images/second_illustration.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
     transition: .6s all .4s cubic-bezier(0, 0, 0, 1);
     opacity: 0;
 }
@@ -701,10 +705,10 @@ p.page_2_text {
         display: none;
     }
     #img_1 {
-        background-image:url(images/test-3D-1.png);
+        background-image: url(images/main_illustration_mob.png);
     }
     #img_2 {
-        background-image:url(images/test-3D-2.png);
+        display: none;
     }
     #img_page_2 {
         height: 200px;
