@@ -628,7 +628,7 @@ h2.page_2_title {
     transition: all .4s cubic-bezier(0, 0, 0, 1.28);
 }
 .page_2_nav_button > img {
-    width: 40px;
+    width: 32px;
     transition: all .4s cubic-bezier(0, 0, 0, 1.28);
 }
 .page_2_nav_button:hover {
@@ -636,7 +636,7 @@ h2.page_2_title {
     background: linear-gradient(0deg, #00000000, #0000000A);
 }
 .page_2_nav_button:hover > img {
-    width: 32px;
+    width: 24px;
 }
 .page_2_nav_pagination {
     display: flex;
@@ -644,27 +644,27 @@ h2.page_2_title {
     gap: 16px;
 }
 .pagination {
-    width: 8px;
-    height: 8px;
-    border-radius: 8px;
-    background: #FFFFFF88;
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+    border: 1px white solid;
     transition: all .4s cubic-bezier(0, 0, 0, 1);
 }
 .pagination.active {
-    height: 32px;
+    height: 24px;
 }
 .pagination:after {
     position: absolute;
     content: "";
-    width: 8px;
-    height: 8px;
-    border-radius: 8px;
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
     background: #FFFFFF;
     visibility: hidden;
 }
 .pagination.active:after {
     visibility: visible;
-    height: 32px;
+    height: 24px;
     transition: height 8s linear;
 }
 
