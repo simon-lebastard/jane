@@ -24,9 +24,11 @@
             <div id="menu_list">
                 <a class="menu_item button active" id="menu_item_1" onClick="navigatePage(1)">Hello</a>
                 <a class="menu_item button" id="menu_item_2" onClick="navigatePage(2)">Who's Jane</a>
-                <a class="menu_item button" id="menu_item_3" onClick="navigatePage(3)">Get a quote</a>
+                <a class="menu_item button" id="menu_item_3" onClick="navigatePage(3)">Request a demo</a>
             </div>
         </header>
+
+
         <section id="content">
             <section class="pages state1" id="page_1">
                 <div class="fullscreen_img" id="img_1"></div>
@@ -37,17 +39,69 @@
                 </div>
                 <div class="navigation nav_page_1 right" onClick="navigatePage(1)"></div>
             </section>
+
+
             <section class="pages state1" id="page_2">
-                <div id="img_page_2"></div>
-                <div id="page_2_content">
-                    <h2 class="page_2_text">How can Jane help you?</h2>
-                    <h3 class="page_2_text" id="h3_1">Timelines made easy.</h3>
-                    <p class="page_2_text">Create complex timelines <b>in minutes</b> with Jane's intuitive timeline tool, directly <b>within Powerpoint</b>.</p>
-                    <h3 class="page_2_text" id="h3_2">Neat design.</h3>
-                    <p class="page_2_text">Create <b>readable</b>, easy-on-the-eye and <b>brand-compliant</b> timelines without even knowing it.</p>
-                    <h3 class="page_2_text" id="h3_3">Size doesn't matter.</h3>
-                    <p class="page_2_text">Jane <b>automatically resizes</b> your timelines to provide the best result for your presentations.</p>
-                    <button class="button black_button" id="button_2" onClick="navigatePage(3)">Get a quote</button>
+                <h2 class="page_2_title">How can Jane help you?</h2>
+                <div class="page_2_content" id="page_2_content_1">
+                    <div class="slide_img" id="slide_img_1"></div>
+                    <div class="page_2_text">
+                        <h3>Create your best timelines<br>within <span>PowerPoint</span>.</h3>
+                        <p>Stay in your favorite tool. Don’t leave data online.</p>
+                        <button class="button black_button" onClick="navigatePage(3)">Request a demo</button>
+                    </div>
+                </div>
+                <div class="page_2_content" id="page_2_content_2">
+                    <div class="slide_img" id="slide_img_2"></div>
+                    <div class="page_2_text">
+                        <h3>Professional design<br>with <span>no effort</span>.</h3>
+                        <p>Create beautiful and readable timelines in a few clicks.</p>
+                        <button class="button black_button" onClick="navigatePage(3)">Request a demo</button>
+                    </div>
+                </div>
+                <div class="page_2_content" id="page_2_content_3">
+                    <div class="slide_img" id="slide_img_3"></div>
+                    <div class="page_2_text">
+                        <h3>Stay compliant<br>with <span>your brand</span>.</h3>
+                        <p>Create timelines that match your brand guidelines without even knowing it.</p>
+                        <button class="button black_button" onClick="navigatePage(3)">Request a demo</button>
+                    </div>
+                </div>
+                <div class="page_2_content" id="page_2_content_4">
+                    <div class="slide_img" id="slide_img_4"></div>
+                    <div class="page_2_text">
+                        <h3>Always fit your slide,<br>always <span>readable</span>.</h3>
+                        <p>Automatically adjust your timeline to your content... and to your slide</p>
+                        <button class="button black_button" onClick="navigatePage(3)">Request a demo</button>
+                    </div>
+                </div>
+                <div class="page_2_content" id="page_2_content_5">
+                    <div class="slide_img" id="slide_img_5"></div>
+                    <div class="page_2_text">
+                        <h3>Gain time, never<br>start <span>from scratch</span>.</h3>
+                        <p>Create timelines with relevant content using Jane’s templates</p>
+                        <button class="button black_button" onClick="navigatePage(3)">Request a demo</button>
+                    </div>
+                </div>
+                <div class="page_2_content" id="page_2_content_6">
+                    <div class="slide_img" id="slide_img_6"></div>
+                    <div class="page_2_text">
+                        <h3>Don't waste more<br>than <span>a few clicks</span>.</h3>
+                        <p>Retrieve the best of web experience within PowerPoint.</p>
+                        <button class="button black_button" onClick="navigatePage(3)">Request a demo</button>
+                    </div>
+                </div>
+                <div class="page_2_nav">
+                    <div class="page_2_nav_button" id="page_2_nav_up" onClick="navCarousel(0)"><img src="images/Arrow-up.svg"></div>
+                    <div class="page_2_nav_pagination">
+                        <div class="pagination" id="pagination_1"></div>
+                        <div class="pagination" id="pagination_2"></div>
+                        <div class="pagination" id="pagination_3"></div>
+                        <div class="pagination" id="pagination_4"></div>
+                        <div class="pagination" id="pagination_5"></div>
+                        <div class="pagination" id="pagination_6"></div>
+                    </div>
+                    <div class="page_2_nav_button" id="page_2_nav_down" onClick="navCarousel(1)"><img src="images/Arrow-down.svg"></div>
                 </div>
                 <div class="navigation nav_page_2 left" onClick="navigatePage(2)">
                     <div class="arrow" id="arrow_left">
@@ -62,11 +116,13 @@
                     </div>
                 </div>
             </section>
+
+
             <section class="pages state1" id="page_3">
                 <div id="page_3_content">
                     <div id="contact_icon"></div>
                     <p class="page_3_text">Wanna be a part of Jane's story?</p>
-                    <button class="button white_button" data-tally-open="wvPe90" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Get a quote</button>
+                    <button class="button white_button" data-tally-open="wvPe90" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Request a demo</button>
                 </div>
                 <div class="navigation nav_page_3 left" id="button_3" onClick="navigatePage(3)"></div>
             </section>

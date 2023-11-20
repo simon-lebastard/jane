@@ -1,38 +1,3 @@
-/*---------------- MENU OPEN FUNCTION ----------------*/
-function openMenu(){
-    var menu_icon = document.getElementById("menu");
-    var menu_list = document.getElementById("menu_list");
-    menu_icon.classList.toggle("active");
-    menu_list.classList.toggle("active");
-}
-function closeMenu(){
-  var menu_icon = document.getElementById("menu");
-  var menu_list = document.getElementById("menu_list");
-  menu_icon.classList.remove("active");
-  menu_list.classList.remove("active");
-}
-
-
-
-
-/*---------------- FOLLOW CURSOR FUNCTION ----------------*/
-var y,x,windowY,windowX;
-document.addEventListener("mousemove", function(e){
-            y = e.pageY;
-            x = e.pageX;
-            windowY = window.screen.height;
-            windowX = window.screen.width;
-  document.getElementById("img_1").style.transform = 'rotateX('+(10-y/(windowY/5))+'deg) rotateY('+(-20+x/(windowX/5))+'deg) rotateZ(4deg) translateX('+0+(x/(windowX/30))+'px) translateY('+0+(y/(windowY/30))+'px)';
-  document.getElementById("img_2").style.transform = 'rotateX('+(10-y/(windowY/5))+'deg) rotateY('+(-20+x/(windowX/5))+'deg) rotateZ(4deg) translateX('+0+(x/(windowX/40))+'px) translateY('+0+(y/(windowY/40))+'px)';
-  //document.getElementById("img_1").style.transform = 'translateX('+0+(x/(windowX/10))+'px) translateY('+0+(y/(windowY/10))+'px)';
-  //document.getElementById("img_2").style.transform = 'translateX('+0+(x/(windowX/20))+'px) translateY('+0+(y/(windowY/20))+'px)';
-});
-
-
-
-
-
-
 /*---------------- LOADER FUNCTION ----------------*/
 window.onload = function() {
   var loader = document.getElementById("loader");
@@ -49,45 +14,179 @@ window.onload = function() {
   setTimeout(function() {
     loader.classList.add("removed");
   }, 2400);
+  setTimeout(function() {
+    document.getElementById("img_1").style.opacity = '1';
+    document.getElementById("img_2").style.opacity = '1';
+  }, 1600);
+  }
+
+
+
+
+/*---------------- MENU OPEN FUNCTION ----------------*/
+function openMenu(){
+  var menu_icon = document.getElementById("menu");
+  var menu_list = document.getElementById("menu_list");
+  menu_icon.classList.toggle("active");
+  menu_list.classList.toggle("active");
+}
+function closeMenu(){
+var menu_icon = document.getElementById("menu");
+var menu_list = document.getElementById("menu_list");
+menu_icon.classList.remove("active");
+menu_list.classList.remove("active");
 }
 
 
 
 
+/*---------------- FOLLOW CURSOR FUNCTION ----------------*/
+var y,x,windowY,windowX;
+document.addEventListener("mousemove", function(e){
+          y = e.pageY;
+          x = e.pageX;
+          windowY = window.screen.height;
+          windowX = window.screen.width;
+document.getElementById("img_1").style.transform = 'rotateX('+(10-y/(windowY/5))+'deg) rotateY('+(-20+x/(windowX/5))+'deg) rotateZ(4deg) translateX('+0+(x/(windowX/30))+'px) translateY('+0+(y/(windowY/30))+'px)';
+document.getElementById("img_2").style.transform = 'rotateX('+(10-y/(windowY/5))+'deg) rotateY('+(-20+x/(windowX/5))+'deg) rotateZ(4deg) translateX('+0+(x/(windowX/40))+'px) translateY('+0+(y/(windowY/40))+'px)';
+//document.getElementById("img_1").style.transform = 'translateX('+0+(x/(windowX/10))+'px) translateY('+0+(y/(windowY/10))+'px)';
+//document.getElementById("img_2").style.transform = 'translateX('+0+(x/(windowX/20))+'px) translateY('+0+(y/(windowY/20))+'px)';
+});
+
+
+
+
+
+/*---------------- CAROUSEL FUNCTION ----------------*/
+let i = 1;
+let looop;
+function navCarousel(direction) {
+  const contentElements = [
+    document.getElementById("page_2_content_1"),
+    document.getElementById("page_2_content_2"),
+    document.getElementById("page_2_content_3"),
+    document.getElementById("page_2_content_4"),
+    document.getElementById("page_2_content_5"),
+    document.getElementById("page_2_content_6"),
+  ];
+  const contentPagination = [
+    document.getElementById("pagination_1"),
+    document.getElementById("pagination_2"),
+    document.getElementById("pagination_3"),
+    document.getElementById("pagination_4"),
+    document.getElementById("pagination_5"),
+    document.getElementById("pagination_6"),
+  ];
+  if(direction === 0) {
+    i--;
+    if(i === -1) {
+      i = 5;
+    }
+  }
+  else {
+    i++;
+    if(i === 6) {
+      i = 0;
+    }
+  }
+  contentElements.forEach(element => {
+    element.classList.remove('active');
+   });
+  contentElements[i].classList.add('active');
+  contentPagination.forEach(element => {
+    element.classList.remove('active');
+   });
+  contentPagination[i].classList.add('active');
+  startCarouselLoop();
+}
+
+function startCarouselLoop() {
+  clearInterval(looop);
+  looop = setInterval(function () {
+    navCarousel(1);
+  }, 8000);
+}
+
+function stopCarouselLoop() {
+  const contentElements = [
+    document.getElementById("page_2_content_1"),
+    document.getElementById("page_2_content_2"),
+    document.getElementById("page_2_content_3"),
+    document.getElementById("page_2_content_4"),
+    document.getElementById("page_2_content_5"),
+    document.getElementById("page_2_content_6"),
+  ];
+  const contentPagination = [
+    document.getElementById("pagination_1"),
+    document.getElementById("pagination_2"),
+    document.getElementById("pagination_3"),
+    document.getElementById("pagination_4"),
+    document.getElementById("pagination_5"),
+    document.getElementById("pagination_6"),
+  ];
+  contentElements.forEach(element => {
+    element.classList.remove('active');
+   });
+  contentPagination.forEach(element => {
+    element.classList.remove('active');
+   });
+  clearInterval(looop);
+  i = 1;
+
+}
 
 
 
 
 /*---------------- NAVIGATION FUNCTION ----------------*/
 function navigatePage(state) {
-  var page_1 = document.getElementById("page_1");
-  var page_2 = document.getElementById("page_2");
-  var page_3 = document.getElementById("page_3");
-  var menu_1 = document.getElementById("menu_item_1");
-  var menu_2 = document.getElementById("menu_item_2");
-  var menu_3 = document.getElementById("menu_item_3");
+  const pages = [
+    document.getElementById("page_1"),
+    document.getElementById("page_2"),
+    document.getElementById("page_3"),
+  ];
+  const menuItems = [
+    document.getElementById("menu_item_1"),
+    document.getElementById("menu_item_2"),
+    document.getElementById("menu_item_3"),
+  ];
+  pages.forEach(element => {
+    element.classList.remove("state1", "state2", "state3");
+   });
+  menuItems.forEach(element => {
+    element.classList.remove("active");
+  });
 
-  page_1.classList.remove("state1", "state2", "state3");
-  page_2.classList.remove("state1", "state2", "state3");
-  page_3.classList.remove("state1", "state2", "state3");
-  menu_1.classList.remove("active");
-  menu_2.classList.remove("active");
-  menu_3.classList.remove("active");
-
-  if (state === 1) {
-    page_1.classList.add("state1");
-    page_2.classList.add("state1");
-    page_3.classList.add("state1");
-    menu_1.classList.add("active");
-  } else if (state === 2) {
-    page_1.classList.add("state2");
-    page_2.classList.add("state2");
-    page_3.classList.add("state2");
-    menu_2.classList.add("active");
-  } else if (state === 3) {
-    page_1.classList.add("state3");
-    page_2.classList.add("state3");
-    page_3.classList.add("state3");
-    menu_3.classList.add("active");
-  }
+if (state === 1) {
+  pages.forEach(element => {
+    element.classList.add("state1");
+   });
+  menuItems[0].classList.add("active");
+  setTimeout(stopCarouselLoop, 800);
+} else if (state === 2) {
+  pages.forEach(element => {
+    element.classList.add("state2");
+   });
+   menuItems[1].classList.add("active");
+  navCarousel(0);
+} else if (state === 3) {
+  pages.forEach(element => {
+    element.classList.add("state3");
+   });
+   menuItems[2].classList.add("active");
+   setTimeout(stopCarouselLoop, 600);
 }
+}
+
+
+
+/*---------------- RELOAD NAV ON RESIZE FUNCTION ----------------*/
+function checkWindowSize() {
+var windowWidth = window.innerWidth;
+if (windowWidth < 800) {
+  navigatePage(1);
+}
+}
+window.addEventListener('resize', function() {
+checkWindowSize();
+});
