@@ -515,7 +515,7 @@ button {
 /*--- PAGE 2 ---*/
 h2.page_2_title {
     color: white;
-    margin: 40px 80px;
+    margin: 40px 80px 16px 80px;
     opacity: 0;
     transform: translateY(24px);
     transition: .6s all .6s cubic-bezier(0, 0, 0, 1);
@@ -528,10 +528,11 @@ h2.page_2_title {
 .page_2_content {
     position: absolute;
     display: flex;
+    align-items: center;
     gap: 40px;
     right: 80px;
     width: calc(100% - 160px);
-    height: calc(100% - 120px);
+    height: calc(100% - 96px);
     transform: translateY(200px);
     opacity: 0;
     z-index: 0;
@@ -544,13 +545,12 @@ h2.page_2_title {
 }
 .slide_img {
     width: 64%;
-    height: 100%;
-    float: left;
+    height: 64%;
     /*box-shadow: inset 0 2px 16px #00000050;
     box-shadow: 0 8px 24px #00000050;*/
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: center;
     transform: translateY(120px);
     opacity: 0;
     transition: .6s all .4s cubic-bezier(0, 0, 0, 1);
@@ -560,22 +560,22 @@ h2.page_2_title {
     opacity: 1;
 }
 #slide_img_1 {
-    background-image: url(images/example.gif);
+    background-image: url(images/powerpoint.gif);
 }
 #slide_img_2 {
-    background-image: url(images/example.gif);
+    background-image: url(images/design.gif);
 }
 #slide_img_3 {
-    background-image: url(images/example.gif);
+    background-image: url(images/branding.gif);
 }
 #slide_img_4 {
-    background-image: url(images/example.gif);
+    background-image: url(images/resize.gif);
 }
 #slide_img_5 {
-    background-image: url(images/example.gif);
+    background-image: url(images/.gif);
 }
 #slide_img_6 {
-    background-image: url(images/example.gif);
+    background-image: url(images/.gif);
 }
 .page_2_text {
     transform: translateY(80px);
@@ -668,16 +668,6 @@ h2.page_2_title {
     transition: height 8s linear;
 }
 
-
-
-
-
-
-
-
-
-
-
 /*--- PAGE 3 ---*/
 #page_3_content {
     position: relative;
@@ -722,28 +712,19 @@ h2.page_2_title {
 
 
 /*---------------- RESPONSIVE ----------------*/
-@media screen and (max-width: 1144px) {
+@media screen and (max-width: 1024px) {
     #page_2 {
-        overflow-y: scroll;
+        overflow: scroll;
     }
-    #img_page_2 {
-        height: 280px;
-        width: calc(100% - 160px);
-        margin: 160px 80px;
+    .page_2_content {
+        flex-direction: column;
+        gap: 16px;
     }
-    #page_2_content {
-        float: left;
-        width: calc(100% - 160px);
-        height: auto;
-        margin: 80px;
+    .slide_img {
+        width: 100%;
     }
-
-    #page_2.state2 > #img_page_2 {
-        margin: 80px 80px 40px 80px;
-    }
-    #page_2.state2 > #page_2_content {
-        margin: 0 80px;
-        padding-bottom: 40px;
+    .page_2_text {
+        width: 100%;
     }
 }
 @media screen and (max-width: 800px) {
@@ -789,7 +770,7 @@ h2.page_2_title {
     }
 
 /*--- CONTENT ---*/
-    #button_1, #button_2 {
+    #button_1, .black_button {
         display: none;
     }
     #img_1 {
@@ -803,25 +784,38 @@ h2.page_2_title {
     .bottom_content {
         padding: 40px 24px;
     }
-    #img_page_2 {
-        height: 200px;
-        width: calc(100% - 80px);
+    /*---*/
+    h2.page_2_title {
         opacity: 1;
-        margin: 40px;
+        transform: translateY(0);
+        margin: 40px 40px 16px 40px;
     }
-    #page_2_content {
+    .page_2_content {
+        position: relative;
+        left: 0;
         float: left;
         width: calc(100% - 80px);
-        height: calc(64% - 40px);
+        height: auto;
         margin: 0 40px;
         opacity: 1;
+        transform: translateY(0);
+        padding-bottom: 40px;
     }
-    h3.page_2_text {
-        margin-bottom: 8px;
+    .slide_img {
+        opacity: 1;
+        height: 300px;
+        transform: translateY(0);
     }
-    p.page_2_text {
-        margin-bottom: 40px;
+    .page_2_text {
+        transform: translateY(0);
+        width: 100%;
+        gap: 40px;
+        opacity: 1;
     }
+    .page_2_nav {
+        display: none;
+    }
+    /*---*/
     #page_3_content {
         top: calc(50% - 92px);
         opacity: 1;
