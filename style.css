@@ -150,8 +150,16 @@ p, ul {
     margin: 0;
 }
 b {
-    font-weight: 500;
+    font-weight: 600;
 }
+a {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+    color: #7333FF;
+}
+a:hover {}
 button {
     cursor: pointer;
     height: 56px;
@@ -572,10 +580,10 @@ h2.page_2_title {
     background-image: url(images/resize.gif);
 }
 #slide_img_5 {
-    background-image: url(images/.gif);
+    background-image: url(images/templates.png);
 }
 #slide_img_6 {
-    background-image: url(images/.gif);
+    background-image: url(images/ux.png);
 }
 .page_2_text {
     transform: translateY(80px);
@@ -677,6 +685,10 @@ h2.page_2_title {
     opacity: 0;
     transition: .6s all .4s cubic-bezier(0, 0, 0, 1);
 }
+#page_3.state3 > #page_3_content {
+    top: calc(50% - 88px);
+    opacity: 1;
+}
 #contact_icon {
     position: relative;
     left: calc(50% - 40px);
@@ -691,15 +703,12 @@ h2.page_2_title {
     color: #8E8C9F;
     transition: .8s all .4s cubic-bezier(0, 0, 0, 1);
 }
-/*--- INTERACTION ---*/
-#page_3.state3 > #page_3_content {
-    top: calc(50% - 88px);
-    opacity: 1;
-}
 #page_3.state3 > #page_3_content > .page_3_text {
     margin: 0;
     margin-bottom: 16px;
 }
+/*.bottom_link {
+}$*/
 
 
 
@@ -728,8 +737,6 @@ h2.page_2_title {
     }
 }
 @media screen and (max-width: 800px) {
-
-
 /*--- STRUCTURE & NAVIGATION ---*/
     html {
         position: relative;
