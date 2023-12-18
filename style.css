@@ -464,14 +464,14 @@ button {
     position: absolute;
     height: 100%;
     top: 0;
-    width: 50%;
+    width: 75%;
     cursor: pointer;
 }
 .navigation.left {
     left: 0;
 }
 .navigation.right {
-    left: 50%;
+    left: 25%;
 }
 #page_1.state1 > .navigation, #page_2.state2 > .navigation, #page_3.state3 > .navigation {
     display: none;
@@ -682,15 +682,71 @@ h2.page_2_title {
 /*--- PAGE 3 ---*/
 #page_3_content {
     position: relative;
-    width: 100%;
+    width: 400px;
+    top: calc(50% - 264px);
+    left: calc(50% - 400px);
+    padding-bottom: 8px;
+    background: white;
+    border-radius: 24px;
     text-align: center;
-    top: 50%;
-    opacity: 0;
-    transition: .6s all .4s cubic-bezier(0, 0, 0, 1);
+    box-shadow: 0 8px 24px #201E2822;
+    transition: all .4s cubic-bezier(0, 0, 0, 1);
 }
 #page_3.state3 > #page_3_content {
-    top: calc(50% - 88px);
+    left: calc(50% - 200px);
     opacity: 1;
+}
+h4 {
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #8E8C9F;
+    width: 100%;
+    margin: 0;
+    padding: 24px 0 23px 0;
+    border-bottom: 1px #EFEEF5 solid;
+}
+.page_3_text {
+    color: #201E28;
+    font-weight: 400;
+}
+.price_container {
+    height: 40px;
+    margin-top: 24px;
+}
+.price {
+    font-size: 40px;
+    line-height: 40px;
+}
+.price.real {
+    font-weight: 600;
+    color: #7333FF;
+}
+.price.stroked {
+    font-weight: 300;
+    text-decoration: line-through;
+    color: #C5C4D6;
+    text-decoration-thickness: 2px;
+}
+.asterisk {
+    font-size: 10px;
+    color: #8E8C9F;
+    font-style: italic;
+}
+.pricing_benefits {
+    width: calc(100% - 128px);
+    padding: 15px 16px 15px 32px;
+    margin: 24px 40px;
+    border-radius: 8px;
+    border: 1px #EFEEF5 solid;
+}
+.pricing_benefits > li {
+    text-align: left;
+    text-decoration: dotted;
+
+}
+.pricing_benefits > li::marker {
+    color: #C5C4D6;
 }
 #contact_icon {
     position: relative;
@@ -701,27 +757,24 @@ h2.page_2_title {
     background-size: contain;
     background-repeat: no-repeat;
 }
-.page_3_text {
-    margin: 40px 0;
-    color: #8E8C9F;
+
+.bottom_links {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #C5C4D6;
+    bottom: 0;
+    opacity: 0;
     transition: .8s all .4s cubic-bezier(0, 0, 0, 1);
-}
-#page_3.state3 > #page_3_content > .page_3_text {
-    margin: 0;
-    margin-bottom: 16px;
 }
 .bottom_link {
     text-align: center;
     font-size: 12px;
     line-height: 24px;
-    position: absolute;
-    width: 400px;
-    left: calc(50% - 200px);
-    bottom: 0;
-    opacity: 0;
-    transition: .8s bottom .4s cubic-bezier(0, 0, 0, 1), .8s opacity .4s cubic-bezier(0, 0, 0, 1), letter-spacing .2s ease-out, color .2s ease-out;
+    display: inline;
+    transition: all .4s cubic-bezier(0, 0, 0, 1);
 }
-#page_3.state3 > .bottom_link {
+#page_3.state3 > .bottom_links {
     opacity: 1;
     bottom: 16px;
 }
@@ -840,16 +893,9 @@ h2.page_2_title {
     }
     /*---*/
     #page_3_content {
-        top: calc(50% - 92px);
+        width: 90%;
+        left: 5%;
         opacity: 1;
-    }
-    .page_3_text {
-        margin: 0;
-        margin-bottom: 16px;
-    }
-    .bottom_link {
-        opacity: 1;
-        bottom: 16px;
     }
 }
 
@@ -907,7 +953,6 @@ h2.page_2_title {
 }
 .nav_tab:hover {
     letter-spacing: 6px;
-    color: #201E28;
 }
 .nav_tab.active {
     color: #7333FF;
@@ -924,7 +969,8 @@ h2.page_2_title {
     padding: 40px;
     width: calc(100% - 160px);
     height: calc(100% - 360px);
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
     border-radius: 24px;
     background-image:url(images/BG_page3.png), linear-gradient(0deg, #201E2800, #201E2803);
     background-position: center;
@@ -941,7 +987,11 @@ h2.page_2_title {
 #privacy {
     transform: translateX(120px);
 }
-#terms.active, #privacy.active {
+#faq {
+    top: 160px;
+    height: calc(100% - 320px);
+}
+#terms.active, #privacy.active, #faq.active {
     transform: translateX(0);
     opacity: 1;
     z-index: 1;
@@ -977,5 +1027,9 @@ h2.page_2_title {
     .legal_section {
         top: 280px;
         height: calc(100% - 440px);
+    }
+    #faq {
+        top: 160px;
+        height: calc(100% - 320px);
     }
 }

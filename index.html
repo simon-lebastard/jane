@@ -1,154 +1,176 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- Google tag (gtag.js) -->
-            <script async src="https://www.googletagmanager.com/gtag/js?id=G-W6GSTQBQQJ"></script>
-            <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', 'G-W6GSTQBQQJ');
-            </script>
-        <title>Jane | PowerPoint charts done right</title>
-        <meta name="viewport" content="width=device-width" />
-        <meta name="description" content="The easiest & fastest modern PowerPoint timeline & Gantt editor, directly accessible within PowerPoint." />
-        <meta property="og:title" content="Jane | PowerPoint charts done right" />
-        <meta property="og:description" content="The easiest & fastest modern timeline & Gantt editor, directly accessible within PowerPoint." />
-        <meta property="og:image" content="https://www.superjane.app/images/open_graph.png" />
-        <meta property="og:image:alt" content="Jane: PowerPoint charts done right." />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta name="twitter:title" content="Jane | PowerPoint charts done right" />
-        <meta name="twitter:description" content="The easiest & fastest modern timeline & Gantt editor, directly accessible within PowerPoint." />
-        <meta name="twitter:url" content="https://www.superjane.app/?src=twitter" />
-        <meta name="twitter:image:src" content="https://www.superjane.app/images/twitter.png" />
-        <meta name="twitter:image:alt" content="Jane: PowerPoint charts done right." />
-        <link rel="stylesheet" type="text/css" href="style.css?v=1" />
-        <script type="text/javascript" src="script.js?v=1"></script>
-        <link rel="icon" href="images/favicon.png" />
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-        </style>
-        <script async src="https://tally.so/widgets/embed.js"></script>
-    </head>
-    <body id="body">
-        <header>
-            <h1 alt="Jane" onClick="navigatePage(1)"></h1>
-            <div id="menu" onClick="openMenu()">
-                <div class="menu_icon" id="men_1"></div>
-                <div class="menu_icon" id="men_2"></div>
-                <div class="menu_icon" id="men_3"></div>
-                <div class="menu_icon" id="men_4"></div>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W6GSTQBQQJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-W6GSTQBQQJ');
+    </script>
+    <title>Jane | PowerPoint charts done right</title>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description"
+        content="The easiest & fastest modern PowerPoint timeline & Gantt editor, directly accessible within PowerPoint." />
+    <meta property="og:title" content="Jane | PowerPoint charts done right" />
+    <meta property="og:description"
+        content="The easiest & fastest modern timeline & Gantt editor, directly accessible within PowerPoint." />
+    <meta property="og:image" content="https://www.superjane.app/images/open_graph.png" />
+    <meta property="og:image:alt" content="Jane: PowerPoint charts done right." />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:title" content="Jane | PowerPoint charts done right" />
+    <meta name="twitter:description"
+        content="The easiest & fastest modern timeline & Gantt editor, directly accessible within PowerPoint." />
+    <meta name="twitter:url" content="https://www.superjane.app/?src=twitter" />
+    <meta name="twitter:image:src" content="https://www.superjane.app/images/twitter.png" />
+    <meta name="twitter:image:alt" content="Jane: PowerPoint charts done right." />
+    <link rel="stylesheet" type="text/css" href="style.css?v=4" />
+    <script type="text/javascript" src="script.js?v=4"></script>
+    <link rel="icon" href="images/favicon.png" />
+    <link rel="canonical" href="https://www.superjane.app/" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <script async src="https://tally.so/widgets/embed.js"></script>
+</head>
+
+<body id="body">
+    <header>
+        <h1 alt="Jane" onClick="navigatePage(1)"></h1>
+        <div id="menu" onClick="openMenu()">
+            <div class="menu_icon" id="men_1"></div>
+            <div class="menu_icon" id="men_2"></div>
+            <div class="menu_icon" id="men_3"></div>
+            <div class="menu_icon" id="men_4"></div>
+        </div>
+        <div id="menu_list">
+            <a class="menu_item button active" id="menu_item_1" onClick="navigatePage(1)">Hello</a>
+            <a class="menu_item button" id="menu_item_2" onClick="navigatePage(2)">Who's Jane</a>
+            <a class="menu_item button" id="menu_item_3" onClick="navigatePage(3)">Request a demo</a>
+        </div>
+    </header>
+
+
+    <section id="content">
+        <section class="pages state1" id="page_1">
+            <div class="fullscreen_img" id="img_1"></div>
+            <div class="fullscreen_img" id="img_2"></div>
+            <div class="bottom_content" id="bott_cont_1">
+                <h2>Create the best timelines<br>in minutes. With <span>Jane</span>.</h2>
+                <button class="button white_button" id="button_1" onClick="navigatePage(2)">Wait, who's Jane?</button>
             </div>
-            <div id="menu_list">
-                <a class="menu_item button active" id="menu_item_1" onClick="navigatePage(1)">Hello</a>
-                <a class="menu_item button" id="menu_item_2" onClick="navigatePage(2)">Who's Jane</a>
-                <a class="menu_item button" id="menu_item_3" onClick="navigatePage(3)">Request a demo</a>
-            </div>
-        </header>
-
-
-        <section id="content">
-            <section class="pages state1" id="page_1">
-                <div class="fullscreen_img" id="img_1"></div>
-                <div class="fullscreen_img" id="img_2"></div>
-                <div class="bottom_content" id="bott_cont_1">
-                    <h2>Create the best timelines<br>in minutes. With <span>Jane</span>.</h2>
-                    <button class="button white_button" id="button_1" onClick="navigatePage(2)">Wait, who's Jane?</button>
-                </div>
-                <div class="navigation nav_page_1 right" onClick="navigatePage(1)"></div>
-            </section>
-
-
-            <section class="pages state1" id="page_2">
-                <h2 class="page_2_title">How can Jane help you?</h2>
-                <div class="page_2_content" id="page_2_content_1">
-                    <div class="slide_img" id="slide_img_1"></div>
-                    <div class="page_2_text">
-                        <h3>Create your best timelines<br>within <span>PowerPoint</span>.</h3>
-                        <p>Stay in your favorite tool. Don’t leave data online.</p>
-                        <button class="button black_button" onClick="navigatePage(3)">Request a demo</button>
-                    </div>
-                </div>
-                <div class="page_2_content" id="page_2_content_2">
-                    <div class="slide_img" id="slide_img_2"></div>
-                    <div class="page_2_text">
-                        <h3>Professional design<br>with <span>no effort</span>.</h3>
-                        <p>Create beautiful and readable timelines in a few clicks.</p>
-                        <button class="button black_button" onClick="navigatePage(3)">Request a demo</button>
-                    </div>
-                </div>
-                <div class="page_2_content" id="page_2_content_3">
-                    <div class="slide_img" id="slide_img_3"></div>
-                    <div class="page_2_text">
-                        <h3>Stay compliant<br>with <span>your brand</span>.</h3>
-                        <p>Create timelines that match your brand guidelines without even knowing it.</p>
-                        <button class="button black_button" onClick="navigatePage(3)">Request a demo</button>
-                    </div>
-                </div>
-                <div class="page_2_content" id="page_2_content_4">
-                    <div class="slide_img" id="slide_img_4"></div>
-                    <div class="page_2_text">
-                        <h3>Always fit your slide,<br>always <span>readable</span>.</h3>
-                        <p>Automatically adjust your timeline to your content... and to your slide</p>
-                        <button class="button black_button" onClick="navigatePage(3)">Request a demo</button>
-                    </div>
-                </div>
-                <div class="page_2_content" id="page_2_content_5">
-                    <div class="slide_img" id="slide_img_5"></div>
-                    <div class="page_2_text">
-                        <h3>Gain time, never<br>start <span>from scratch</span>.</h3>
-                        <p>Create timelines with relevant content using Jane’s templates</p>
-                        <button class="button black_button" onClick="navigatePage(3)">Request a demo</button>
-                    </div>
-                </div>
-                <div class="page_2_content" id="page_2_content_6">
-                    <div class="slide_img" id="slide_img_6"></div>
-                    <div class="page_2_text">
-                        <h3>Don't waste more<br>than <span>a few clicks</span>.</h3>
-                        <p>Retrieve the best of web experience within PowerPoint.</p>
-                        <button class="button black_button" onClick="navigatePage(3)">Request a demo</button>
-                    </div>
-                </div>
-                <div class="page_2_nav">
-                    <div class="page_2_nav_button" id="page_2_nav_up" onClick="navCarousel(0)"><img src="images/Arrow-up.svg"></div>
-                    <div class="page_2_nav_pagination">
-                        <div class="pagination" id="pagination_1"></div>
-                        <div class="pagination" id="pagination_2"></div>
-                        <div class="pagination" id="pagination_3"></div>
-                        <div class="pagination" id="pagination_4"></div>
-                        <div class="pagination" id="pagination_5"></div>
-                        <div class="pagination" id="pagination_6"></div>
-                    </div>
-                    <div class="page_2_nav_button" id="page_2_nav_down" onClick="navCarousel(1)"><img src="images/Arrow-down.svg"></div>
-                </div>
-                <div class="navigation nav_page_2 left" onClick="navigatePage(2)">
-                    <div class="arrow" id="arrow_left">
-                        <div class="arrow_icon left"></div>
-                        <div class="arrow_icon right"></div>
-                    </div>
-                </div>
-                <div class="navigation nav_page_2 right" onClick="navigatePage(2)">
-                    <div class="arrow" id="arrow_right">
-                        <div class="arrow_icon left"></div>
-                        <div class="arrow_icon right"></div>
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="pages state1" id="page_3">
-                <div id="page_3_content">
-                    <div id="contact_icon"></div>
-                    <p class="page_3_text">Wanna be a part of Jane's story?</p>
-                    <button class="button white_button" data-tally-open="wvPe90" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Request a demo</button>
-                </div>
-                <div class="navigation nav_page_3 left" id="button_3" onClick="navigatePage(3)"></div>
-                <a class="bottom_link" href="legal.html" target="_blank">Terms of services & privacy policy</a>
-            </section>
+            <div class="navigation nav_page_1 right" onClick="navigatePage(1)"></div>
         </section>
-    </body>
-    <section id="loader"><div id="loader_logo"></div></section>
+
+
+        <section class="pages state1" id="page_2">
+            <h2 class="page_2_title">How can Jane help you?</h2>
+            <div class="page_2_content" id="page_2_content_1">
+                <div class="slide_img" id="slide_img_1"></div>
+                <div class="page_2_text">
+                    <h3>Create your best timelines<br>within <span>PowerPoint</span>.</h3>
+                    <p>Stay in your favorite tool. Don’t leave data online.</p>
+                    <button class="button black_button" onClick="navigatePage(3)">Request a demo</button>
+                </div>
+            </div>
+            <div class="page_2_content" id="page_2_content_2">
+                <div class="slide_img" id="slide_img_2"></div>
+                <div class="page_2_text">
+                    <h3>Professional design<br>with <span>no effort</span>.</h3>
+                    <p>Create beautiful and readable timelines in a few clicks.</p>
+                    <button class="button black_button" onClick="navigatePage(3)">Request a demo</button>
+                </div>
+            </div>
+            <div class="page_2_content" id="page_2_content_3">
+                <div class="slide_img" id="slide_img_3"></div>
+                <div class="page_2_text">
+                    <h3>Stay compliant<br>with <span>your brand</span>.</h3>
+                    <p>Create timelines that match your brand guidelines without even knowing it.</p>
+                    <button class="button black_button" onClick="navigatePage(3)">Request a demo</button>
+                </div>
+            </div>
+            <div class="page_2_content" id="page_2_content_4">
+                <div class="slide_img" id="slide_img_4"></div>
+                <div class="page_2_text">
+                    <h3>Always fit your slide,<br>always <span>readable</span>.</h3>
+                    <p>Automatically adjust your timeline to your content... and to your slide</p>
+                    <button class="button black_button" onClick="navigatePage(3)">Request a demo</button>
+                </div>
+            </div>
+            <div class="page_2_content" id="page_2_content_5">
+                <div class="slide_img" id="slide_img_5"></div>
+                <div class="page_2_text">
+                    <h3>Gain time, never<br>start <span>from scratch</span>.</h3>
+                    <p>Create timelines with relevant content using Jane’s templates</p>
+                    <button class="button black_button" onClick="navigatePage(3)">Request a demo</button>
+                </div>
+            </div>
+            <div class="page_2_content" id="page_2_content_6">
+                <div class="slide_img" id="slide_img_6"></div>
+                <div class="page_2_text">
+                    <h3>Don't waste more<br>than <span>a few clicks</span>.</h3>
+                    <p>Retrieve the best of web experience within PowerPoint.</p>
+                    <button class="button black_button" onClick="navigatePage(3)">Request a demo</button>
+                </div>
+            </div>
+            <div class="page_2_nav">
+                <div class="page_2_nav_button" id="page_2_nav_up" onClick="navCarousel(0)"><img
+                        src="images/Arrow-up.svg"></div>
+                <div class="page_2_nav_pagination">
+                    <div class="pagination" id="pagination_1"></div>
+                    <div class="pagination" id="pagination_2"></div>
+                    <div class="pagination" id="pagination_3"></div>
+                    <div class="pagination" id="pagination_4"></div>
+                    <div class="pagination" id="pagination_5"></div>
+                    <div class="pagination" id="pagination_6"></div>
+                </div>
+                <div class="page_2_nav_button" id="page_2_nav_down" onClick="navCarousel(1)"><img
+                        src="images/Arrow-down.svg"></div>
+            </div>
+            <div class="navigation nav_page_2 left" onClick="navigatePage(2)">
+                <div class="arrow" id="arrow_left">
+                    <div class="arrow_icon left"></div>
+                    <div class="arrow_icon right"></div>
+                </div>
+            </div>
+            <div class="navigation nav_page_2 right" onClick="navigatePage(2)">
+                <div class="arrow" id="arrow_right">
+                    <div class="arrow_icon left"></div>
+                    <div class="arrow_icon right"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="pages state1" id="page_3">
+            <div id="page_3_content">
+                <h4>Wanna be a part of Jane's story?</h4>
+                <p class="page_3_text"><span class="price stroked">150</span><span class="price real">100€</span>/year per user*</p>
+                <p class="asterisk">*because you’re an early bird ♡</p>
+                <ul class="pricing_benefits">
+                    <li class="page_3_text">PowerPoint Add-on</li>
+                    <li class="page_3_text">Unlimited charts</li>
+                    <li class="page_3_text">Client support</li>
+                    <li class="page_3_text">Product updates included</li>
+                    <li class="page_3_text">Discount starting at 10+ users</li>
+                </ul>
+                <button class="button white_button" data-tally-open="wvPe90" data-tally-emoji-text="👋"
+                    data-tally-emoji-animation="wave">Request a demo</button>
+                <p class="asterisk">7-day free trial included</p>
+                <div id="contact_icon"></div>
+            </div>
+            <div class="navigation nav_page_3 left" id="button_3" onClick="navigatePage(3)"></div>
+            <div class="bottom_links"><a class="bottom_link" href="legal.html" target="_blank">Terms of services & privacy policy</a> • <a class="bottom_link" href="faq.html" target="_blank">Frequently Asked Questions</a></div>
+        </section>
+    </section>
+</body>
+<section id="loader">
+    <div id="loader_logo"></div>
+</section>
+
 </html>
