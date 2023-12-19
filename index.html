@@ -29,8 +29,7 @@
     <meta name="twitter:url" content="https://www.superjane.app/?src=twitter" />
     <meta name="twitter:image:src" content="https://www.superjane.app/images/twitter.png" />
     <meta name="twitter:image:alt" content="Jane: PowerPoint charts done right." />
-    <link rel="stylesheet" type="text/css" href="style.css?v=4" />
-    <script type="text/javascript" src="script.js?v=4"></script>
+    <link rel="stylesheet" type="text/css" href="style.css?v=5" />
     <link rel="icon" href="images/favicon.png" />
     <link rel="canonical" href="https://www.superjane.app/" />
     <style>
@@ -122,14 +121,14 @@
                 <div class="page_2_nav_button" id="page_2_nav_up" onClick="navCarousel(0)"><img
                         src="images/Arrow-up.svg"></div>
                 <div class="page_2_nav_pagination">
-                    <div class="pagination" id="pagination_1"></div>
-                    <div class="pagination" id="pagination_2"></div>
-                    <div class="pagination" id="pagination_3"></div>
-                    <div class="pagination" id="pagination_4"></div>
-                    <div class="pagination" id="pagination_5"></div>
-                    <div class="pagination" id="pagination_6"></div>
+                    <div class="pagination" id="pagination_1" onClick="navCarousel(1)"></div>
+                    <div class="pagination" id="pagination_2" onClick="navCarousel(2)"></div>
+                    <div class="pagination" id="pagination_3" onClick="navCarousel(3)"></div>
+                    <div class="pagination" id="pagination_4" onClick="navCarousel(4)"></div>
+                    <div class="pagination" id="pagination_5" onClick="navCarousel(5)"></div>
+                    <div class="pagination" id="pagination_6" onClick="navCarousel(6)"></div>
                 </div>
-                <div class="page_2_nav_button" id="page_2_nav_down" onClick="navCarousel(1)"><img
+                <div class="page_2_nav_button" id="page_2_nav_down" onClick="navCarousel(99)"><img
                         src="images/Arrow-down.svg"></div>
             </div>
             <div class="navigation nav_page_2 left" onClick="navigatePage(2)">
@@ -173,4 +172,7 @@
     <div id="loader_logo"></div>
 </section>
 
+
+
+<script type="text/javascript" src="script.js?v=5"></script>
 </html>

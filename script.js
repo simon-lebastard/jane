@@ -83,11 +83,14 @@ function navCarousel(direction) {
       i = 5;
     }
   }
-  else {
+  else if(direction === 99) {
     i++;
     if(i === 6) {
       i = 0;
     }
+  }
+  else {
+    i = direction-1;
   }
   contentElements.forEach(element => {
     element.classList.remove('active');
@@ -103,7 +106,7 @@ function navCarousel(direction) {
 function startCarouselLoop() {
   clearInterval(looop);
   looop = setInterval(function () {
-    navCarousel(1);
+    navCarousel(99);
   }, 8000);
 }
 
@@ -134,6 +137,23 @@ function stopCarouselLoop() {
   i = 1;
 
 }
+
+/*---------------- CAROUSEL x CURSOR FUNCTION ----------------*/
+let isScrolling = false;
+const carouselContainer = document.getElementById("page_2");
+function handleWheel(event) {
+  if (!isScrolling) {
+    isScrolling = true;
+    // Detect the scrolling direction & determine value to the const
+    const direction = event.deltaY > 0 ? 99 : 0;
+    navCarousel(direction);
+    setTimeout(function () {
+      isScrolling = false;
+    }, 1500);
+  }
+}
+carouselContainer.addEventListener('wheel', handleWheel);
+
 
 
 
