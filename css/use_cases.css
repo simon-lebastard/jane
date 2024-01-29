@@ -1,0 +1,25 @@
+#menu_list {
+    right: 40px;
+}
+.menu_item {
+    width: auto;
+    padding: 0;
+    letter-spacing: 4px;
+}
+.menu_item:hover {
+    letter-spacing: 4px;
+}
+#menu_list.active > .menu_item {
+    width: auto;
+    padding: 0 16px;
+}
+
+
+#page_4_content.use_case_content {
+    position: relative;
+    left: calc(50% - 200px);
+}
+.bottom_links.use_case_content {
+    opacity: 1;
+    bottom: 16px;
+}
