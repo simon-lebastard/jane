@@ -408,6 +408,10 @@ h2.page_2_title {
     mask-repeat: no-repeat;
     mask-position: center;
     mask-size: 48px;
+    -webkit-mask-image: url(../images/roadmap.svg);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: 48px;
     transition: all .4s cubic-bezier(0, 0, 0, 1);
 }
 .use_case:hover > .use_case_icon {
