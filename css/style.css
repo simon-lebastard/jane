@@ -202,7 +202,7 @@ button {
 
 
 /*---------------- PAGES ----------------*/
-#content {
+.content {
     position: absolute;
     top: 120px;
     width: 100%;
@@ -418,7 +418,7 @@ h2.page_2_title {
 }
 
 
-/*--- PAGE 4 ---*/
+/*--- PRICING ---*/
 #page_4 {
     width: calc(100% - 80px);
     height: calc(100% - 24px);
@@ -435,9 +435,9 @@ h2.page_2_title {
     justify-content: center;
 }
 
-#page_4_content {
+.pricing {
     width: 400px;
-    left: 60%;
+    margin-left: 60%;
     padding-bottom: 8px;
     background: white;
     border-radius: 24px;
@@ -446,8 +446,8 @@ h2.page_2_title {
     transition: all 1s cubic-bezier(0, 0, 0, 1);
     z-index: 1;
 }
-#page_4.state4 > #page_4_content {
-    left: 0;
+#page_4.state4 > .pricing {
+    margin-left: 0;
     opacity: 1;
 }
 h4 {
@@ -460,7 +460,7 @@ h4 {
     padding: 24px 0 23px 0;
     border-bottom: 1px #EFEEF5 solid;
 }
-.page_4_text {
+.pricing {
     color: #201E28;
     font-weight: 400;
 }
@@ -671,7 +671,7 @@ h4 {
         padding-bottom: 80px;
     }
     /*---*/
-    #page_4_content {
+    .pricing {
         width: 90%;
         left: 5%;
         opacity: 1;
