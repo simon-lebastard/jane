@@ -29,7 +29,8 @@
     <meta name="twitter:url" content="https://www.superjane.app/?src=twitter" />
     <meta name="twitter:image:src" content="https://www.superjane.app/images/twitter.png" />
     <meta name="twitter:image:alt" content="Jane: PowerPoint charts done right." />
-    <link rel="stylesheet" type="text/css" href="style.css?v=5" />
+    <link rel="stylesheet" type="text/css" href="css/navigation.css?v=6" />
+    <link rel="stylesheet" type="text/css" href="css/style.css?v=6" />
     <link rel="icon" href="images/favicon.png" />
     <link rel="canonical" href="https://www.superjane.app/" />
     <style>
@@ -50,7 +51,8 @@
         <div id="menu_list">
             <a class="menu_item button active" id="menu_item_1" onClick="navigatePage(1)">Hello</a>
             <a class="menu_item button" id="menu_item_2" onClick="navigatePage(2)">Who's Jane</a>
-            <a class="menu_item button" id="menu_item_3" onClick="navigatePage(3)">Request a demo</a>
+            <a class="menu_item button" id="menu_item_3" onClick="navigatePage(3)">How Jane helps</a>
+            <a class="menu_item button" id="menu_item_4" onClick="navigatePage(4)">Request a demo</a>
         </div>
     </header>
 
@@ -63,7 +65,7 @@
                 <h2>Create the best timelines<br>in minutes. With <span>Jane</span>.</h2>
                 <button class="button white_button" id="button_1" onClick="navigatePage(2)">Wait, who's Jane?</button>
             </div>
-            <div class="navigation nav_page_1 right" onClick="navigatePage(1)"></div>
+            <div class="navigation nav_page_1" onClick="navigatePage(1)"></div>
         </section>
 
 
@@ -74,7 +76,7 @@
                 <div class="page_2_text">
                     <h3>Create your best timelines<br>within <span>PowerPoint</span>.</h3>
                     <p>Stay in your favorite tool. Don’t leave data online.</p>
-                    <button class="button black_button" onClick="navigatePage(3)">Request a demo</button>
+                    <button class="button black_button" onClick="navigatePage(3)">How can Jane help?</button>
                 </div>
             </div>
             <div class="page_2_content" id="page_2_content_2">
@@ -82,7 +84,7 @@
                 <div class="page_2_text">
                     <h3>Professional design<br>with <span>no effort</span>.</h3>
                     <p>Create beautiful and readable timelines in a few clicks.</p>
-                    <button class="button black_button" onClick="navigatePage(3)">Request a demo</button>
+                    <button class="button black_button" onClick="navigatePage(3)">How can Jane help?</button>
                 </div>
             </div>
             <div class="page_2_content" id="page_2_content_3">
@@ -90,7 +92,7 @@
                 <div class="page_2_text">
                     <h3>Stay compliant<br>with <span>your brand</span>.</h3>
                     <p>Create timelines that match your brand guidelines without even knowing it.</p>
-                    <button class="button black_button" onClick="navigatePage(3)">Request a demo</button>
+                    <button class="button black_button" onClick="navigatePage(3)">How can Jane help?</button>
                 </div>
             </div>
             <div class="page_2_content" id="page_2_content_4">
@@ -98,7 +100,7 @@
                 <div class="page_2_text">
                     <h3>Always fit your slide,<br>always <span>readable</span>.</h3>
                     <p>Automatically adjust your timeline to your content... and to your slide</p>
-                    <button class="button black_button" onClick="navigatePage(3)">Request a demo</button>
+                    <button class="button black_button" onClick="navigatePage(3)">How can Jane help?</button>
                 </div>
             </div>
             <div class="page_2_content" id="page_2_content_5">
@@ -106,7 +108,7 @@
                 <div class="page_2_text">
                     <h3>Gain time, never<br>start <span>from scratch</span>.</h3>
                     <p>Create timelines with relevant content using Jane’s templates</p>
-                    <button class="button black_button" onClick="navigatePage(3)">Request a demo</button>
+                    <button class="button black_button" onClick="navigatePage(3)">How can Jane help?</button>
                 </div>
             </div>
             <div class="page_2_content" id="page_2_content_6">
@@ -114,12 +116,11 @@
                 <div class="page_2_text">
                     <h3>Don't waste more<br>than <span>a few clicks</span>.</h3>
                     <p>Retrieve the best of web experience within PowerPoint.</p>
-                    <button class="button black_button" onClick="navigatePage(3)">Request a demo</button>
+                    <button class="button black_button" onClick="navigatePage(3)">How can Jane help?</button>
                 </div>
             </div>
             <div class="page_2_nav">
-                <div class="page_2_nav_button" id="page_2_nav_up" onClick="navCarousel(0)"><img
-                        src="images/Arrow-up.svg"></div>
+                <div class="page_2_nav_button" id="page_2_nav_up" onClick="navCarousel(0)"><img src="images/Arrow-up.svg"></div>
                 <div class="page_2_nav_pagination">
                     <div class="pagination" id="pagination_1" onClick="navCarousel(1)"></div>
                     <div class="pagination" id="pagination_2" onClick="navCarousel(2)"></div>
@@ -128,8 +129,7 @@
                     <div class="pagination" id="pagination_5" onClick="navCarousel(5)"></div>
                     <div class="pagination" id="pagination_6" onClick="navCarousel(6)"></div>
                 </div>
-                <div class="page_2_nav_button" id="page_2_nav_down" onClick="navCarousel(99)"><img
-                        src="images/Arrow-down.svg"></div>
+                <div class="page_2_nav_button" id="page_2_nav_down" onClick="navCarousel(99)"><img src="images/Arrow-down.svg"></div>
             </div>
             <div class="navigation nav_page_2 left" onClick="navigatePage(2)">
                 <div class="arrow" id="arrow_left">
@@ -147,24 +147,72 @@
 
 
         <section class="pages state1" id="page_3">
+            <h2>Let Jane help you in your <span>everyday tasks</span>.</h2>
             <div id="page_3_content">
+                <a class="use_case" href="faq.html" target="_blank">
+                    <div class="use_case_icon" id="us_icon_1"><svg></svg></div>
+                    <h3 class="use_case_title">Roadmap</h3>
+                    <p>Blablou mdr</p>
+                    <span class="link">Learn more</span>
+                </a>
+                <a class="use_case" href="faq.html" target="_blank">
+                    <div class="use_case_icon" id="us_icon_2"></div>
+                    <h3 class="use_case_title">Roadmap</h3>
+                    <p>Blablou mdr</p>
+                    <span class="link">Learn more</span>
+                </a>
+                <a class="use_case" href="faq.html" target="_blank">
+                    <div class="use_case_icon" id="us_icon_3"></div>
+                    <h3 class="use_case_title">Roadmap</h3>
+                    <p>Blablou mdr</p>
+                    <span class="link">Learn more</span>
+                </a>
+                <a class="use_case" href="faq.html" target="_blank">
+                    <div class="use_case_icon" id="us_icon_4"></div>
+                    <h3 class="use_case_title">Roadmap</h3>
+                    <p>Blablou mdr</p>
+                    <span class="link">Learn more</span>
+                </a>
+                <a class="use_case" href="faq.html" target="_blank">
+                    <div class="use_case_icon" id="us_icon_5"></div>
+                    <h3 class="use_case_title">Roadmap</h3>
+                    <p>Blablou mdr</p>
+                    <span class="link">Learn more</span>
+                </a>
+                <a class="use_case" href="faq.html" target="_blank">
+                    <div class="use_case_icon" id="us_icon_6"></div>
+                    <h3 class="use_case_title">Roadmap</h3>
+                    <p>Blablou mdr</p>
+                    <span class="link">Learn more</span>
+                </a>
+            </div>
+            <button class="button white_button" id="button_3" onClick="navigatePage(4)">Request a demo</button>
+            <div class="navigation nav_page_3" onClick="navigatePage(3)">
+            </div>
+        </section>
+
+
+        <section class="pages state1" id="page_4">
+            <div id="page_4_content">
                 <h4>Wanna be a part of Jane's story?</h4>
-                <p class="page_3_text"><span class="price stroked">150</span><span class="price real">100€</span>/year per user*</p>
+                <p class="page_4_text"><span class="price stroked">150</span><span class="price real">100€</span>/year per user*</p>
                 <p class="asterisk">*because you’re an early bird ♡</p>
                 <ul class="pricing_benefits">
-                    <li class="page_3_text">PowerPoint Add-on</li>
-                    <li class="page_3_text">Unlimited charts</li>
-                    <li class="page_3_text">Client support</li>
-                    <li class="page_3_text">Product updates included</li>
-                    <li class="page_3_text">Discount starting at 10+ users</li>
+                    <li class="page_4_text">PowerPoint Add-on</li>
+                    <li class="page_4_text">Unlimited charts</li>
+                    <li class="page_4_text">Client support</li>
+                    <li class="page_4_text">Product updates included</li>
+                    <li class="page_4_text">Discount starting at 10+ users</li>
                 </ul>
-                <button class="button white_button" data-tally-open="wvPe90" data-tally-emoji-text="👋"
+                <button class="button white_button" id="button_4" data-tally-open="wvPe90" data-tally-emoji-text="👋"
                     data-tally-emoji-animation="wave">Request a demo</button>
                 <p class="asterisk">7-day free trial included</p>
                 <div id="contact_icon"></div>
             </div>
-            <div class="navigation nav_page_3 left" id="button_3" onClick="navigatePage(3)"></div>
-            <div class="bottom_links"><a class="bottom_link" href="legal.html" target="_blank">Terms of services & privacy policy</a> • <a class="bottom_link" href="faq.html" target="_blank">Frequently Asked Questions</a></div>
+            <div class="navigation nav_page_4" onClick="navigatePage(4)">
+                <div id="page_4_nav_button"><img src="images/Arrow-hor.svg"></div>
+            </div>
+            <div class="bottom_links"><a class="link bottom_link" href="legal.html" target="_blank">Terms of services & privacy policy</a> • <a class="link bottom_link" href="faq.html" target="_blank">Frequently Asked Questions</a></div>
         </section>
     </section>
 </body>
@@ -174,5 +222,5 @@
 
 
 
-<script type="text/javascript" src="script.js?v=5"></script>
+<script type="text/javascript" src="js/script.js?v=6"></script>
 </html>

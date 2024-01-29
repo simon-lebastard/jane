@@ -40,6 +40,76 @@ menu_list.classList.remove("active");
 
 
 
+
+/*---------------- NAVIGATION FUNCTION ----------------*/
+function navigatePage(state) {
+  const pages = [
+    document.getElementById("page_1"),
+    document.getElementById("page_2"),
+    document.getElementById("page_3"),
+    document.getElementById("page_4")
+  ];
+  const menuItems = [
+    document.getElementById("menu_item_1"),
+    document.getElementById("menu_item_2"),
+    document.getElementById("menu_item_3"),
+    document.getElementById("menu_item_4")
+  ];
+  pages.forEach(element => {
+    element.classList.remove("state1", "state2", "state3", "state4");
+   });
+  menuItems.forEach(element => {
+    element.classList.remove("active");
+  });
+
+if (state === 1) {
+  pages.forEach(element => {
+    element.classList.add("state1");
+   });
+  menuItems[0].classList.add("active");
+  setTimeout(stopCarouselLoop, 800);
+} else if (state === 2) {
+  pages.forEach(element => {
+    element.classList.add("state2");
+   });
+   menuItems[1].classList.add("active");
+  navCarousel(0);
+} else if (state === 3) {
+  pages.forEach(element => {
+    element.classList.add("state3");
+   });
+   menuItems[2].classList.add("active");
+   setTimeout(stopCarouselLoop, 600);
+} else if (state === 4) {
+  pages.forEach(element => {
+    element.classList.add("state4");
+   });
+   menuItems[3].classList.add("active");
+   setTimeout(stopCarouselLoop, 600);
+}
+}
+
+
+
+
+/*---------------- RELOAD NAV ON RESIZE FUNCTION ----------------*/
+function checkWindowSize() {
+var windowWidth = window.innerWidth;
+if (windowWidth < 800) {
+  navigatePage(1);
+}
+}
+window.addEventListener('resize', function() {
+checkWindowSize();
+});
+
+
+
+
+
+
+
+
 /*---------------- FOLLOW CURSOR FUNCTION ----------------*/
 var y,x,windowY,windowX;
 document.addEventListener("mousemove", function(e){
@@ -49,9 +119,9 @@ document.addEventListener("mousemove", function(e){
           windowX = window.screen.width;
 document.getElementById("img_1").style.transform = 'rotateX('+(10-y/(windowY/5))+'deg) rotateY('+(-20+x/(windowX/5))+'deg) rotateZ(4deg) translateX('+0+(x/(windowX/30))+'px) translateY('+0+(y/(windowY/30))+'px)';
 document.getElementById("img_2").style.transform = 'rotateX('+(10-y/(windowY/5))+'deg) rotateY('+(-20+x/(windowX/5))+'deg) rotateZ(4deg) translateX('+0+(x/(windowX/40))+'px) translateY('+0+(y/(windowY/40))+'px)';
-//document.getElementById("img_1").style.transform = 'translateX('+0+(x/(windowX/10))+'px) translateY('+0+(y/(windowY/10))+'px)';
-//document.getElementById("img_2").style.transform = 'translateX('+0+(x/(windowX/20))+'px) translateY('+0+(y/(windowY/20))+'px)';
 });
+
+
 
 
 
@@ -153,60 +223,3 @@ function handleWheel(event) {
   }
 }
 carouselContainer.addEventListener('wheel', handleWheel);
-
-
-
-
-
-/*---------------- NAVIGATION FUNCTION ----------------*/
-function navigatePage(state) {
-  const pages = [
-    document.getElementById("page_1"),
-    document.getElementById("page_2"),
-    document.getElementById("page_3"),
-  ];
-  const menuItems = [
-    document.getElementById("menu_item_1"),
-    document.getElementById("menu_item_2"),
-    document.getElementById("menu_item_3"),
-  ];
-  pages.forEach(element => {
-    element.classList.remove("state1", "state2", "state3");
-   });
-  menuItems.forEach(element => {
-    element.classList.remove("active");
-  });
-
-if (state === 1) {
-  pages.forEach(element => {
-    element.classList.add("state1");
-   });
-  menuItems[0].classList.add("active");
-  setTimeout(stopCarouselLoop, 800);
-} else if (state === 2) {
-  pages.forEach(element => {
-    element.classList.add("state2");
-   });
-   menuItems[1].classList.add("active");
-  navCarousel(0);
-} else if (state === 3) {
-  pages.forEach(element => {
-    element.classList.add("state3");
-   });
-   menuItems[2].classList.add("active");
-   setTimeout(stopCarouselLoop, 600);
-}
-}
-
-
-
-/*---------------- RELOAD NAV ON RESIZE FUNCTION ----------------*/
-function checkWindowSize() {
-var windowWidth = window.innerWidth;
-if (windowWidth < 800) {
-  navigatePage(1);
-}
-}
-window.addEventListener('resize', function() {
-checkWindowSize();
-});
