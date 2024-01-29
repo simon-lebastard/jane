@@ -401,19 +401,19 @@ h2.page_2_title {
     color: #201E28;
 }
 .use_case_icon {
-    width: 64px;
-    height: 64px;
+    width: 48px;
+    height: 48px;
     background: #201E28;
     mask-image: url(../images/Arrow-hor.svg);
     mask-repeat: no-repeat;
     mask-position: center;
-    mask-size: 64px;
+    mask-size: 48px;
     transition: all .4s cubic-bezier(0, 0, 0, 1);
 }
 .use_case:hover > .use_case_icon {
-    width: 48px;
-    height: 48px;
-    mask-size: 48px;
+    width: 40px;
+    height: 40px;
+    mask-size: 40px;
     background: #7333FF;
 }
 
