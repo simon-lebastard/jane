@@ -407,6 +407,7 @@ h2.page_2_title {
     mask-image: url(../images/Arrow-hor.svg);
     mask-repeat: no-repeat;
     mask-position: center;
+    mask-size: 64px;
     transition: all .4s cubic-bezier(0, 0, 0, 1);
 }
 .use_case:hover > .use_case_icon {
