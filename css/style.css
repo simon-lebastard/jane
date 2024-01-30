@@ -413,8 +413,6 @@ h2.page_2_title {
     transition: all .4s cubic-bezier(0, 0, 0, 1);
 }
 .use_case:hover > .use_case_icon {
-    width: 40px;
-    height: 40px;
     mask-size: 40px;
     background: #7333FF;
 }
