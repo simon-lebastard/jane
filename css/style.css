@@ -134,7 +134,7 @@ h2 > span {
     color: #7333FF;
 }
 h3 {
-    color: white;
+    color: #201E28;
     font-size: 24px;
     line-height: 32px;
     font-weight: 600;
@@ -343,6 +343,9 @@ h2.page_2_title {
     opacity: 1;
     gap: 40px;
 }
+.page_2_text > h3 {
+    color: white;
+}
 .page_2_text > p {
     width: 100%;
     font-size: 16px;
@@ -396,9 +399,6 @@ h2.page_2_title {
 .use_case:hover > .link {
     color: #7333FF;
     letter-spacing: 1px;
-}
-.use_case_title {
-    color: #201E28;
 }
 .use_case_icon {
     width: 48px;

@@ -42,8 +42,12 @@
     -webkit-mask: linear-gradient(0deg,
     rgba(0,0,0,0) 00%, rgba(0,0,0,1) 50%);
 }
-.hero > h2 {
+.hero_text {
+    width: 50%;
     margin: 0 40px;
+}
+.hero_text > h2 {
+    margin: 0;
 }
 
 
@@ -79,9 +83,6 @@
 }
 .pain_content_text {
     flex: 1 0 0;
-}
-.pain_content_text > h3 {
-    color: #201E28;
 }
 
 
@@ -120,10 +121,6 @@
 .solution_content_text {
     flex: none;
     text-align: center;
-}
-.solution_content_text > h3,
-.solution_content_text > p {
-    color: #201E28;
 }
 
 
