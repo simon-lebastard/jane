@@ -77,12 +77,22 @@
     flex-direction: row-reverse;
 }
 .pain_content_img {
-    height: 240px;
-    background: blue;
+    height: 280px;
+    mask-position: center;
+    mask-size: 110%;
+    mask-repeat: no-repeat;
+    transition: all .2s ease-out;
     flex: 1 0 0;
+    background: red;
+}
+.pci_1 {
+    mask-image: url(../images/use_cases/resize.svg);
+}
+.pci_2 {
+    mask-image: url(../images/use_cases/drag_n_drop.svg);
 }
 .pain_content_text {
-    flex: 1 0 0;
+    flex: 2 0 0;
 }
 
 
