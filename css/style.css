@@ -414,6 +414,7 @@ h2.page_2_title {
 }
 .use_case:hover > .use_case_icon {
     mask-size: 40px;
+    -webkit-mask-size: 40px;
     background: #7333FF;
 }
 #uc_icon_1 {
