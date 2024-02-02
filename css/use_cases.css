@@ -78,23 +78,17 @@
 }
 .pain_content_img {
     height: 280px;
-    background: red;
-    mask-position: center;
-    mask-size: 110%;
-    mask-repeat: no-repeat;
-    -webkit-mask-position: center;
-    -webkit-mask-size: 110%;
-    -webkit-mask-repeat: no-repeat;
+    background-position: center;
+    background-size: 110%;
+    background-repeat: no-repeat;
     transition: all .2s ease-out;
     flex: 1 0 0;
 }
 .pci_1 {
-    mask-image: url(../images/use_cases/resize.svg);
-    -webkit-mask-image: url(../images/use_cases/resize.svg);
+    background-image: url(../images/use_cases/resize.svg);
 }
 .pci_2 {
-    mask-image: url(../images/use_cases/drag_n_drop.svg);
-    -webkit-mask-image: url(../images/use_cases/drag_n_drop.svg);
+    background-image: url(../images/use_cases/drag_n_drop.svg);
 }
 .pain_content_text {
     flex: 2 0 0;
