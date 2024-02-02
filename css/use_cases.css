@@ -67,6 +67,23 @@
     margin: 0;
 }
 
+/*--- RESPONSIVE ---*/
+@media screen and (max-width: 800px) {
+    .hero {
+        flex-direction: column-reverse;
+        margin-bottom: 40px;
+        height: auto;
+    }
+    .hero_image {
+        width: 100%;
+        height: 0;
+        padding-top: 60%;
+
+        flex: none;
+    }
+}
+
+
 
 /*--- PAIN ---*/
 .pain {
@@ -166,7 +183,6 @@
 .solution > h2 {
     text-align: center;
 }
-
 
 /*--- RESPONSIVE ---*/
 @media screen and (max-width: 800px) {
