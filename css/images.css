@@ -1,0 +1,101 @@
+/*------------ GLOBAL ------------*/
+#logo {
+    background-image:url(../images/logo.png);
+}
+#loader_logo {
+    background-image:url(../images/loader-logo-2.png);
+}
+#loader_logo:before {
+    background-image:url(../images/loader-logo-1.png);
+}
+#contact_icon {
+    background-image:url(../images/logo-end.png);
+}
+
+/*------------ HOME PAGE ------------*/
+
+/*--- Hero illustration ---*/
+#img_1 {
+    background-image: url(../images/main_illustration-1.png);
+}
+#img_2 {
+    background-image: url(../images/main_illustration-2.png);
+}
+@media screen and (max-width: 800px) {
+    #img_1 {
+        background-image: url(../images/main_illustration_mob.png);
+    }
+}
+
+/*--- Carousel ---*/
+#slide_img_1 {
+    background-image: url(../images/gif/powerpoint.gif);
+}
+#slide_img_2 {
+    background-image: url(../images/gif/design.gif);
+}
+#slide_img_3 {
+    background-image: url(../images/gif/branding.gif);
+}
+#slide_img_4 {
+    background-image: url(../images/gif/resize.gif);
+}
+#slide_img_5 {
+    background-image: url(../images/gif/templates.gif);
+}
+#slide_img_6 {
+    background-image: url(../images/gif/ux.gif);
+}
+
+/*--- Use cases ---*/
+#uc_icon_1 {
+    mask-image: url(../images/icons/roadmap.svg);
+    -webkit-mask-image: url(../images/icons/roadmap.svg);
+}
+#uc_icon_2 {
+    mask-image: url(../images/icons/gantt.svg);
+    -webkit-mask-image: url(../images/icons/gantt.svg);
+}
+#uc_icon_3 {
+    mask-image: url(../images/icons/project_planning.svg);
+    -webkit-mask-image: url(../images/icons/project_planning.svg);
+}
+
+
+/*------------ USE CASE PAGES ------------*/
+
+/*--- Hero banners ---*/
+.hero_image.roadmap {
+    background-image: url(../images/use_cases/hero-roadmap.png);
+}
+.hero_image.gantt {
+    background-image: url(../images/use_cases/hero-roadmap.png);
+}
+.hero_image.project_planning {
+    background-image: url(../images/use_cases/hero-roadmap.png);
+}
+
+/*--- Roadmap pain points ---*/
+.pci_1.roadmap {
+    background-image: url(../images/use_cases/resize.svg);
+}
+.pci_2.roadmap {
+    background-image: url(../images/use_cases/drag_n_drop.svg);
+}
+/*--- Gantt charts pain points ---*/
+.pci_1.gantt {
+    background-image: url(../images/use_cases/add.svg);
+}
+.pci_2.gantt {
+    background-image: url(../images/use_cases/drag_n_drop.svg);
+}
+/*--- Solutions (global) ---*/
+.sci_1 {
+    background-image: url(../images/use_cases/template.png);
+}
+.sci_2 {
+    background-image: url(../images/use_cases/resize.png);
+}
+.sci_3 {
+    background-image: url(../images/use_cases/drag_n_drop.png);
+}

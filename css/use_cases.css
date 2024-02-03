@@ -57,9 +57,6 @@
     background-position: center;
     background-repeat: no-repeat;
 }
-.hero_image.roadmap {
-    background-image: url(../images/use_cases/hero-roadmap.png);
-}
 .hero_text {
     flex: 1 0 0;
 }
@@ -117,12 +114,6 @@
     transition: all .2s ease-out;
     flex: 1 0 0;
 }
-.pci_1 {
-    background-image: url(../images/use_cases/resize.svg);
-}
-.pci_2 {
-    background-image: url(../images/use_cases/drag_n_drop.svg);
-}
 .pain_content_text {
     flex: 2 0 0;
 }
@@ -165,15 +156,6 @@
 }
 .solution_content_img:hover {
     background-size: 102%;
-}
-.sci_1 {
-    background-image: url(../images/use_cases/template.png);
-}
-.sci_2 {
-    background-image: url(../images/use_cases/resize.png);
-}
-.sci_3 {
-    background-image: url(../images/use_cases/drag_n_drop.png);
 }
 .solution_content_text {
     flex: none;

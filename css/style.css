@@ -32,12 +32,11 @@ header {
     z-index: 2;
     position: fixed;
 }
-h1 {
+#logo {
     float: left;
     width: 160px;
     height: 40px;
     margin: 40px 0 0 40px;
-    background-image:url(../images/logo.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -70,7 +69,6 @@ h1 {
     left: calc(50% - 120px);
     top: calc(50% - 40px);
     transform: translateY(80px);
-    background-image:url(../images/loader-logo-2.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -83,7 +81,6 @@ h1 {
     content: "";
     width: 360px;
     height: 80px;
-    background-image:url(../images/loader-logo-1.png);
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
@@ -123,14 +120,14 @@ h1 {
 .button:hover {
     color: #7333FF;
 }
-h2 {
+h1, h2 {
     color: #201E28;
     font-size: 40px;
     line-height: 40px;
     font-weight: 600;
     margin: 40px 0;
 }
-h2 > span {
+h1 > span, h2 > span {
     color: #7333FF;
 }
 h3 {
@@ -238,12 +235,6 @@ button {
     opacity: 0;
     transition: opacity 1s ease;
 }
-#img_1 {
-    background-image: url(../images/main_illustration-1.png);
-}
-#img_2 {
-    background-image: url(../images/main_illustration-2.png);
-}
 .bottom_content {
     position: absolute;
     bottom: 0;
@@ -308,24 +299,6 @@ h2.page_2_title {
 .page_2_content.active > .slide_img {
     transform: translateY(0);
     opacity: 1;
-}
-#slide_img_1 {
-    background-image: url(../images/gif/powerpoint.gif);
-}
-#slide_img_2 {
-    background-image: url(../images/gif/design.gif);
-}
-#slide_img_3 {
-    background-image: url(../images/gif/branding.gif);
-}
-#slide_img_4 {
-    background-image: url(../images/gif/resize.gif);
-}
-#slide_img_5 {
-    background-image: url(../images/gif/templates.gif);
-}
-#slide_img_6 {
-    background-image: url(../images/gif/ux.gif);
 }
 .page_2_text {
     transform: translateY(80px);
@@ -416,18 +389,6 @@ h2.page_2_title {
     mask-size: 40px;
     -webkit-mask-size: 40px;
     background: #7333FF;
-}
-#uc_icon_1 {
-    mask-image: url(../images/icons/roadmap.svg);
-    -webkit-mask-image: url(../images/icons/roadmap.svg);
-}
-#uc_icon_2 {
-    mask-image: url(../images/icons/gantt.svg);
-    -webkit-mask-image: url(../images/icons/gantt.svg);
-}
-#uc_icon_3 {
-    mask-image: url(../images/icons/project_planning.svg);
-    -webkit-mask-image: url(../images/icons/project_planning.svg);
 }
 
 
@@ -521,7 +482,6 @@ h4 {
     left: calc(50% - 40px);
     width: 80px;
     height: 80px;
-    background-image:url(../images/logo-end.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -640,7 +600,6 @@ h4 {
         display: none;
     }
     #img_1 {
-        background-image: url(../images/main_illustration_mob.png);
         margin: 0;
         width: 100%;
     }
