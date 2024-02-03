@@ -49,16 +49,28 @@
 
 /*--- Use cases ---*/
 #uc_icon_1 {
-    mask-image: url(../images/icons/roadmap.svg);
-    -webkit-mask-image: url(../images/icons/roadmap.svg);
-}
-#uc_icon_2 {
     mask-image: url(../images/icons/gantt.svg);
     -webkit-mask-image: url(../images/icons/gantt.svg);
+}
+#uc_icon_2 {
+    mask-image: url(../images/icons/roadmap.svg);
+    -webkit-mask-image: url(../images/icons/roadmap.svg);
 }
 #uc_icon_3 {
     mask-image: url(../images/icons/project_planning.svg);
     -webkit-mask-image: url(../images/icons/project_planning.svg);
+}
+#uc_icon_4 {
+    mask-image: url(../images/icons/event_planning.svg);
+    -webkit-mask-image: url(../images/icons/event_planning.svg);
+}
+#uc_icon_5 {
+    mask-image: url(../images/icons/workload.svg);
+    -webkit-mask-image: url(../images/icons/workload.svg);
+}
+#uc_icon_6 {
+    mask-image: url(../images/icons/more.svg);
+    -webkit-mask-image: url(../images/icons/more.svg);
 }
 
 
@@ -72,6 +84,12 @@
     background-image: url(../images/use_cases/hero-roadmap.png);
 }
 .hero_image.project_planning {
+    background-image: url(../images/use_cases/hero-roadmap.png);
+}
+.hero_image.event_planning {
+    background-image: url(../images/use_cases/hero-roadmap.png);
+}
+.hero_image.workload {
     background-image: url(../images/use_cases/hero-roadmap.png);
 }
 
@@ -89,6 +107,28 @@
 .pci_2.gantt {
     background-image: url(../images/use_cases/drag_n_drop.svg);
 }
+/*--- Project planning pain points ---*/
+.pci_1.project_planning {
+    background-image: url(../images/use_cases/management.svg);
+}
+.pci_2.project_planning {
+    background-image: url(../images/use_cases/drag_n_drop.svg);
+}
+/*--- Event planning pain points ---*/
+.pci_1.event_planning {
+    background-image: url(../images/use_cases/planning.svg);
+}
+.pci_2.event_planning {
+    background-image: url(../images/use_cases/updates.svg);
+}
+/*--- Workload management pain points ---*/
+.pci_1.workload {
+    background-image: url(../images/use_cases/workload.svg);
+}
+.pci_2.workload {
+    background-image: url(../images/use_cases/updates.svg);
+}
+
 /*--- Solutions (global) ---*/
 .sci_1 {
     background-image: url(../images/use_cases/template.png);
@@ -98,4 +138,7 @@
 }
 .sci_3 {
     background-image: url(../images/use_cases/drag_n_drop.png);
+}
+.sci_4 {
+    background-image: url(../images/use_cases/powerpoint.png);
 }

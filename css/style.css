@@ -366,6 +366,10 @@ h2.page_2_title {
     cursor: pointer;
     transition: all .4s cubic-bezier(0, 0, 0, 1);
 }
+.disabled_uc {
+    pointer-events: none;
+    box-shadow: inset 0 2px 4px #201E2811, 0 0 0 #201E2811;
+}
 .use_case:hover {
     box-shadow: inset 0 2px 4px #201E2811, 0 0 0 #201E2811;
 }
