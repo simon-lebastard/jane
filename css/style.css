@@ -353,6 +353,7 @@ h2.page_2_title {
 }
 .use_case {
     flex: 1 1 24%;
+    min-width: 184px;
     background: linear-gradient(0deg, #201E2800, #201E2803), white;
     padding: 24px;
     border-radius: 16px;

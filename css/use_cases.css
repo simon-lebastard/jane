@@ -173,6 +173,7 @@
     .pain_content_img {
         width: 100%;
         flex: none;
+        background-size: contain;
     }
     .solution_container {
         flex-direction: column;
