@@ -77,20 +77,20 @@
 /*------------ USE CASE PAGES ------------*/
 
 /*--- Hero banners ---*/
+.hero_image.gantt {
+    background-image: url(../images/use_cases/hero-gantt.png);
+}
 .hero_image.roadmap {
     background-image: url(../images/use_cases/hero-roadmap.png);
 }
-.hero_image.gantt {
-    background-image: url(../images/use_cases/hero-roadmap.png);
-}
 .hero_image.project_planning {
-    background-image: url(../images/use_cases/hero-roadmap.png);
+    background-image: url(../images/use_cases/hero-project_planning.png);
 }
 .hero_image.event_planning {
-    background-image: url(../images/use_cases/hero-roadmap.png);
+    background-image: url(../images/use_cases/hero-event_planning.png);
 }
 .hero_image.workload {
-    background-image: url(../images/use_cases/hero-roadmap.png);
+    background-image: url(../images/use_cases/hero-workload.png);
 }
 
 /*--- Roadmap pain points ---*/

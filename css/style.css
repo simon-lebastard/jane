@@ -564,8 +564,11 @@ h4 {
         overflow-y: auto;
         overflow-x: hidden;
     }
-    #menu, #menu_list {
+    #menu, #menu_list, #uc_nav_list {
         display: none;
+    }
+    .footer {
+        margin-bottom: 40px;
     }
     .pages {
         left: 0;

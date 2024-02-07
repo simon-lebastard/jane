@@ -135,6 +135,48 @@
 }
 
 
+/*---------------- USE CASE NAVIGATION ----------------*/
+#uc_nav_list {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    z-index: 0;
+    height: 40px;
+}
+.uc_nav_item {
+    padding: 0 16px;
+    line-height: 40px;
+    color: #201E28;
+}
+.uc_nav_item.active {
+    color: #8E8C9F;
+    pointer-events: none;
+}
+.uc_nav_item.right:after,
+.uc_nav_item.left:before {
+    content:"";
+    position: relative;
+    display: inline-block;
+    background-image: url(../images/icons/Arrow-hor.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 12px;
+    transition: all .4s cubic-bezier(0, 0, 0, 1.28);
+}
+.uc_nav_item.left:before {
+    transform: rotate(180deg);
+    margin-right: 4px;
+}
+.uc_nav_item.right:hover:after {
+    transform: translateX(8px);
+}
+.uc_nav_item.left:hover:before {
+    transform: rotate(180deg) translateX(8px);
+}
+
+
 
 
 /*---------------- PAGES & NAVIGATION ----------------*/
@@ -350,7 +392,7 @@
     width: 24px;
 }
 
-/*--- PAGINATION ---*/
+/*--- CAROUSEL PAGINATION ---*/
 .page_2_nav_pagination {
     display: flex;
     flex-direction: column;

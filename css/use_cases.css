@@ -2,25 +2,10 @@
     overflow-y: scroll;
     overflow-x: hidden;
 }
-/*---------------- MENU ADJUSTMENTS ----------------
-#menu_list {
-    right: 40px;
+#uc_button {
+    float: right;
+    margin: 32px 40px 0 0;
 }
-.menu_item {
-    width: auto;
-    padding: 0;
-    letter-spacing: 4px;
-}
-.menu_item:hover {
-    letter-spacing: 4px;
-}
-#menu_list.active > .menu_item {
-    width: auto;
-    padding: 0 16px;
-}*/
-
-
-
 
 /*---------------- CONTENT ----------------*/
 .hero {
@@ -188,7 +173,6 @@
     width: calc(100% - 80px);
     height: calc(100% - 40px);
     left: 40px;
-    margin-bottom: 40px;
     border-radius: 24px;
     background-color: white;
     background-image: url(../images/BG_page3.png), linear-gradient(0deg, #201E2800, #201E2803);
